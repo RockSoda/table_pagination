@@ -3,7 +3,7 @@ import { uuid } from 'uuidv4'
 
 const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
     const pageNumbers = []
-
+    //Calculate page numbers and append them into the array above
     for(let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++){
         pageNumbers.push(i)
     }
